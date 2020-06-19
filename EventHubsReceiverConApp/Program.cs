@@ -11,10 +11,10 @@ namespace EventHubsReceiverConApp
 {
   class Program
   {
-    private const string ehubNamespaceConnectionString = "Event Hub Endpoint Here";
-    private const string eventHubName = "Event Hub Name here";
-    private const string blobStorageConnectionString = "Storage Connection String";
-    private const string blobContainerName = "Container Name Here";
+    private const string ehubNamespaceConnectionString = "Endpoint=sb://rkeventhub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=KqdGAnOr/4P9L8JkDa5VXNljm4qglW1VBQaSoGudQ+k=";
+    private const string eventHubName = "myeventhub";
+    private const string blobStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=rkeventhubstorage;AccountKey=Dyrl2Cpgc0v3zjAFgWPlygZE7yvVUPq6XqHONbaal8KD9jNuMbJKGWgmjzz/5uj6+WJkM22IjR+OnQd96+0atA==;EndpointSuffix=core.windows.net";
+    private const string blobContainerName = "rkcontainer";
     static async Task Main(string[] args)
     {
       // Read from the default consumer group: $Default

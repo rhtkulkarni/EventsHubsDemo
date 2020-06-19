@@ -8,8 +8,8 @@ namespace EventHubsSenderConApp
 {
   class Program
   {
-    private const string connectionString = "Event Hub Endpoint Here";
-    private const string eventHubName = "Event Hub Name here";
+    private const string connectionString = "Endpoint=sb://rkeventhub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=KqdGAnOr/4P9L8JkDa5VXNljm4qglW1VBQaSoGudQ+k=";
+    private const string eventHubName = "myeventhub";
     static async Task Main(string[] args)
     {
       // Create a producer client that you can use to send events to an event hub
